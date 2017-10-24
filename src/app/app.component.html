@@ -5,9 +5,16 @@
   </h1>
 </div>
 <h2>List of sonnets: </h2>
-<ul>
-  <li *ngFor="let sonnet of sonnets">
-    Sonnet {{ sonnet.number }}
-  </li>
-</ul>
+<table>
+  <thead>
+  <td>Number</td>
+  <td>Lines</td>
+  </thead>
+  <tbody>
+  <tr *ngFor="let sonnet of sonnets">
+    <td>{{sonnet.number}}</td>
+    <td>{{sonnet.lines}}</td>
+  </tr>
+  </tbody>
+</table>
 

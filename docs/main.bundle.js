@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{title}}!\n  </h1>\n</div>\n<h2>List of sonnets: </h2>\n<ul>\n  <li *ngFor=\"let sonnet of sonnets\">\n    Sonnet {{ sonnet.number }}\n  </li>\n</ul>\n\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{title}}!\n  </h1>\n</div>\n<h2>List of sonnets: </h2>\n<table>\n  <thead>\n  <td>Number</td>\n  <td>Lines</td>\n  </thead>\n  <tbody>\n  <tr *ngFor=\"let sonnet of sonnets\">\n    <td>{{sonnet.number}}</td>\n    <td>{{sonnet.lines}}</td>\n  </tr>\n  </tbody>\n</table>\n\n"
 
 /***/ }),
 
