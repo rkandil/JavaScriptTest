@@ -1,7 +1,4 @@
-angular.module('app').service("Sonnets", function(){
-	return {
-		getSonnets: function () {
-			return [
+export const sonnets = [
 				{
 					"number": "1",
 					"lines": [
@@ -2927,6 +2924,4 @@ angular.module('app').service("Sonnets", function(){
 						"Love's fire heats water, water cools not love."
 					]
 				}
-			]
-		}
-	}});
+			];

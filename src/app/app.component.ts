@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { sonnets } from './sonnets';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = "Shakespeare's Sonnets";
+  sonnets = sonnets;
 }
