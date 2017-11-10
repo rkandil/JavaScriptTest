@@ -14,7 +14,7 @@
   <tbody>
     <tr *ngFor="let sonnet of sonnets | filter : searchString">
       <td>{{sonnet.number}}</td>
-      <td>{{sonnet.lines}}</td>
+      <td><textarea [(ngModel)]="sonnet.lines"></textarea></td>
     </tr>
   </tbody>
 </table>
