@@ -5,16 +5,16 @@
   </h1>
 </div>
 <h2>List of sonnets: </h2>
+<input type="search" [(ngModel)]="searchString" />
 <table>
   <thead>
-  <td>Number</td>
-  <td>Lines</td>
+    <td>Number</td>
+    <td>Lines</td>
   </thead>
   <tbody>
-  <tr *ngFor="let sonnet of sonnets">
-    <td>{{sonnet.number}}</td>
-    <td>{{sonnet.lines}}</td>
-  </tr>
+    <tr *ngFor="let sonnet of sonnets | filter : searchString">
+      <td>{{sonnet.number}}</td>
+      <td>{{sonnet.lines}}</td>
+    </tr>
   </tbody>
 </table>
-
