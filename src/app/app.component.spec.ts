@@ -1,13 +1,29 @@
 import { TestBed, async } from '@angular/core/testing';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
+import { FilterPipe } from './pipes/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        FilterPipe
       ],
+      imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        BrowserAnimationsModule
+      ],
+      providers: []
     }).compileComponents();
   }));
 

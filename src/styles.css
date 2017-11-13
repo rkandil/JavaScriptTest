@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    color: white;
+    background: rgb(191, 143, 0);
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Spectral SC';
+
+}
+
+textarea.mat-input-element {
+    resize: none ;
+    overflow: hidden ;
+}
+
+.header {
+    background: rgb(217, 217, 217);
+    color: rgb(108, 0, 0);
+}
+
+input, textarea {
+    background: white;
+    color: rgb(142,0, 0);
+    width: 100%;
+}
+
+
+input[type="search"]{
+    background: transparent;
+    border: 0px;
+}
+
+.search {
+    background: white;
+    border: 1px solid rgb(142,0,0);
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.search-input {
+    display: inline-block;
+    width: 95%;
+}
+
+.search-icon {
+    display: inline-block;
+    width: 2%;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.glyphicon-search {
+    color: rgb(142,0,0);
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-form-field-placeholder {
+    color: rgb(180, 0, 0);
+}
+
+.mat-focused .mat-form-field-placeholder {
+    color: rgb(142, 0, 0);
+}
+
+.mat-form-field-underline {
+    background-color: rgb(191,143,0);
+}
+
+.mat-form-field-ripple {
+    background-color: rgb(142, 0, 0);
+}
+
+.sonnet {
+    padding: 20px;
+    background: rgb(217,217,217);
+    border-bottom: 2px solid rgb(108,0,0);
+}
+
+.sonnet-number {
+    color: rgb(142, 0,0);
+    font-weight: 500;
+}
