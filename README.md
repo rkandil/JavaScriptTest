@@ -21,6 +21,9 @@ At the end, make sure you send us the GitHub link to your fork and publish with:
 ```
 ng build --output-path docs
 ```
+My output link is : https://rkandil.github.io/JavaScriptTest/
+
+```
 
 Make sure your tests pass with:
 
